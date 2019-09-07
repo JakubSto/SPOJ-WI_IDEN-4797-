@@ -11,14 +11,20 @@ public class Main {
 
         // ----------------------------------------------------------- //
 
-        if (words.length() <= chars){
+        if (finished(words,chars)){
             System.out.println(words);
         }
-        else{
-            System.out.println(DelateChar.delateChar(words, chars));
+        else {
+            words = DelateChar.delateChar(words, chars);
         }
-        if(words.length() != chars){
+            words = DelateNumbers.delateNumber(words,chars);
+            System.out.println(words);
 
+    }
+    static boolean finished (String words, int chars){
+        if (words.length() <= chars){
+            return true;
         }
+        return false;
     }
 }
