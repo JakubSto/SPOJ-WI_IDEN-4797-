@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //------Inputs------------------------------------------------//
+
         Scanner scan = new Scanner(System.in);
         String charsString = scan.nextLine();
         int chars = Integer.parseInt(charsString);
@@ -16,6 +18,8 @@ public class Main {
             delateChar(words, chars);
         }
     }
+
+    //------Methods----------------------------------------------------//
 
     static String delateChar(String words, int chars) {
         int counterOfChars = words.length();
