@@ -23,11 +23,29 @@ public class Main {
 
         for (int i = counterOfChars-1; i < 0; i--){
             if (words.charAt(i) == '_'){
-                words.set =
+                if (i == counterOfChars-1 || i == 0){
+
+                    // zamiana znaku
+                    words.trim();
+                    checkCharsToDelate(--charsToDelate,--i);
+
+                }
+                // zamiana znaku
+                String first;
+                String second;
+                
+
             }
 
 
         }
     return null;
+    }
+
+    static int checkCharsToDelate (int charsToDelate, int i){
+        if (0 == charsToDelate){
+            return -1;
+        }
+        return i;
     }
 }
