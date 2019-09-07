@@ -15,7 +15,7 @@ public class Main {
             System.out.println(words);
         }
         else{
-            delateChar(words, chars);
+            System.out.println(delateChar(words, chars));
         }
     }
 
@@ -25,19 +25,10 @@ public class Main {
         int counterOfChars = words.length();
         int charsToDelate = counterOfChars - chars;
 
-        for (int i = counterOfChars-1; i < 0; i--){
+        for (int i = counterOfChars-1; i > 0; i--){
             if (words.charAt(i) == '_'){
-                if (i == counterOfChars-1 || i == 0){
-
-                    // zamiana znaku
-                    words.trim();
-                    checkCharsToDelate(--charsToDelate,--i);
-
-                }
-                // zamiana znaku
-                String strings = null;
-                String[] arrStr = strings.split(":");
-                words = arrStr[0] + arrStr[1];
+                    StringBuffer str = new StringBuffer(words);
+                    words = str.delete(i,i+1).toString();
                 checkCharsToDelate(--charsToDelate,--i);
             }
         }
