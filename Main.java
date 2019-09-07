@@ -31,15 +31,13 @@ public class Main {
 
                 }
                 // zamiana znaku
-                String first;
-                String second;
-                
-
+                String strings = null;
+                String[] arrStr = strings.split(":");
+                words = arrStr[0] + arrStr[1];
+                checkCharsToDelate(--charsToDelate,--i);
             }
-
-
         }
-    return null;
+    return words;
     }
 
     static int checkCharsToDelate (int charsToDelate, int i){
