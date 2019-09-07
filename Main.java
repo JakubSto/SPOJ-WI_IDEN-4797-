@@ -10,15 +10,23 @@ public class Main {
         String words = scan.nextLine();
 
         // ----------------------------------------------------------- //
-
-        if (finished(words,chars)){
-            System.out.println(words);
+        int i = 1;
+        switch(i){
+            case 1:
+                if (finished(words,chars))
+                    break;
+            case 2:
+                words = DelateChar.delateChar(words, chars);
+                if (finished(words,chars))
+                    break;
+            case 3:
+                words = DelateNumbers.delateNumber(words,chars);
+                if (finished(words,chars))
+                    break;
+            case 4:
+            case 5:
         }
-        else {
-            words = DelateChar.delateChar(words, chars);
-        }
-            words = DelateNumbers.delateNumber(words,chars);
-            System.out.println(words);
+        System.out.println(words);
 
     }
     static boolean finished (String words, int chars){
