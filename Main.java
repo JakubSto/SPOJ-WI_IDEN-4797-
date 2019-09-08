@@ -24,6 +24,9 @@ public class Main {
                 if (finished(words,chars))
                     break;
             case 4:
+                words = DelateVovel.delateVovel(words,chars);
+                if (finished(words,chars))
+                    break;
             case 5:
         }
         System.out.println(words);
