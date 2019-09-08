@@ -17,7 +17,7 @@ public class DelateVovel {
 
     static int checkCharsToDelate (int charsToDelate, int i, int counterOfChars){
         if (0 == charsToDelate){
-            return counterOfChars*2;
+            return counterOfChars+1;
         }
         return i;
     }

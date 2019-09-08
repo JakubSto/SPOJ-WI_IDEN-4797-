@@ -28,6 +28,9 @@ public class Main {
                 if (finished(words,chars))
                     break;
             case 5:
+                words = DelateLetter.delateLetter(words,chars);
+                if (finished(words,chars))
+                    break;
         }
         System.out.println(words);
 
