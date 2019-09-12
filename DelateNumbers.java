@@ -8,7 +8,7 @@ public class DelateNumbers {
             if (ascii > 47 && ascii < 58) {
                 StringBuffer str = new StringBuffer(words);
                 words = str.delete(i, i + 1).toString();
-                checkCharsToDelate(--charsToDelate,--i);
+                i = checkCharsToDelate(--charsToDelate,--i);
             }
         }
         return words;

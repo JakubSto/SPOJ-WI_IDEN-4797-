@@ -17,20 +17,21 @@ public class Main {
                     break;
             case 2:
                 words = DelateChar.delateChar(words, chars);
+                System.out.println(words);
                 if (finished(words,chars))
                     break;
             case 3:
                 words = DelateNumbers.delateNumber(words,chars);
+                System.out.println(words);
                 if (finished(words,chars))
                     break;
             case 4:
                 words = DelateVovel.delateVovel(words,chars);
+                System.out.println(words);
                 if (finished(words,chars))
                     break;
             case 5:
                 words = DelateLetter.delateLetter(words,chars);
-                if (finished(words,chars))
-                    break;
         }
         System.out.println(words);
 

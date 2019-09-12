@@ -9,7 +9,7 @@ public class DelateVovel {
                     || words.charAt(i) == 'o' || words.charAt(i) == 'u' || words.charAt(i) == 'ó' || words.charAt(i) == 'y') {
                 StringBuffer str = new StringBuffer(words);
                 words = str.delete(i, i + 1).toString();
-                checkCharsToDelate(--charsToDelate,++i, counterOfChars);
+               i = checkCharsToDelate(--charsToDelate,--i, counterOfChars);
             }
         }
         return words;

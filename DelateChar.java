@@ -7,7 +7,7 @@ public class DelateChar {
             if (words.charAt(i) == '_'){
                 StringBuffer str = new StringBuffer(words);
                 words = str.delete(i,i+1).toString();
-                checkCharsToDelate(--charsToDelate,--i);
+                i = checkCharsToDelate(--charsToDelate,--i);
             }
         }
         return words;
