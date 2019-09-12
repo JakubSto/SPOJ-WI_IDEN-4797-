@@ -16,22 +16,22 @@ public class Main {
                 if (finished(words, chars))
                     break;
             case 2:
-                words = DelateChar.delateChar(words, chars);
+                words = DeleteChar.deleteChar(words, chars);
                 System.out.println(words);
                 if (finished(words, chars))
                     break;
             case 3:
-                words = DelateNumbers.delateNumber(words, chars);
+                words = DeleteNumbers.deleteNumber(words, chars);
                 System.out.println(words);
                 if (finished(words, chars))
                     break;
             case 4:
-                words = DelateVovel.delateVovel(words, chars);
+                words = DeleteVowel.deleteVowel(words, chars);
                 System.out.println(words);
                 if (finished(words, chars))
                     break;
             case 5:
-                words = DelateLetter.delateLetter(words, chars);
+                words = DeleteLetter.deleteLetter(words, chars);
         }
         System.out.println(words);
 

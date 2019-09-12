@@ -1,9 +1,9 @@
 import java.util.List;
 
-public class DelateVovel {
-    static String delateVovel(String words, int chars) {
+public class DeleteVowel {
+    static String deleteVowel(String words, int chars) {
         int counterOfChars = words.length();
-        int charsToDelate = counterOfChars - chars;
+        int charsToDelete = counterOfChars - chars;
         words = words.toLowerCase();
 
         List<Character> vowels = List.of('a', 'ą', 'e', 'ę', 'i', 'o', 'u', 'ó', 'y');
@@ -12,14 +12,14 @@ public class DelateVovel {
             if (vowels.contains(words.charAt(i))) {
                 StringBuffer str = new StringBuffer(words);
                 words = str.delete(i, i + 1).toString();
-               i = checkCharsToDelate(--charsToDelate,--i, counterOfChars);
+               i = checkCharsToDelete(--charsToDelete,--i, counterOfChars);
             }
         }
         return words;
     }
 
-    static int checkCharsToDelate (int charsToDelate, int i, int counterOfChars){
-        if (0 == charsToDelate){
+    static int checkCharsToDelete(int charsToDelete, int i, int counterOfChars){
+        if (0 == charsToDelete){
             return counterOfChars+1;
         }
         return i;
